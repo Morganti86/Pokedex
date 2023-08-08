@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -86,13 +86,12 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background-color: rgb(50, 50, 50);
+  /* 
+  background-image: linear-gradient(to right, rgb(73, 123, 167), rgb(255, 255, 255));
+  background-repeat: no-repeat;
+  background-size: contain; */
 }
 
 a {
@@ -100,8 +99,199 @@ a {
   text-decoration: none;
 }
 
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap ;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.pokemonList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.pokemonCard {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: black; */
+  background-image: url("../../public/pokeball.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  
+}
+
+.pokemonImage {
+  margin-top: 5%;
+  object-fit: scale-down;
+}
+
+.pokemonName {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.pokemonInfo {
+  padding-top: 5%;
+  line-height: 25px;
+  margin-left: 3px;
+  min-width: 300px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.table {
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 20px;
+}
+
+.tableDescription {
+  width: fit-content;
+}
+
+.tableStats {
+  justify-content: space-between;
+  display: flex;
+  width: 130px;
+}
+
+.tableSideBar {
+  line-height: 20px;
+  margin-left: 1%;
+}
+
+.sideBar {
+  line-height: 20px;
+}
+
+.style {
+  padding: 0 5px;
+  border: 1px solid #a99890;
+  border-radius: 3px;
+  color: #fff;
+  display: inline;
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #333;
+  text-transform: uppercase;
+  width: 60px;
+}
+.normal {
+  background-color: rgba(168, 160, 144, 0.8);
+}
+.fire {
+  background-color: rgba(240, 80, 48, 0.8);
+}
+.steel {
+  background-color: rgba(168, 168, 192, 0.8);
+}
+.water {
+  background-color: rgba(56, 153, 248, 0.8);
+}
+.grass {
+  background-color: rgba(120, 200, 80, 0.8);
+}
+.electric {
+  background-color: rgba(248, 208, 48, 0.8);
+}
+.ice {
+  background-color: rgba(88, 200, 224, 0.8);
+}
+.fighting {
+  background-color: rgba(160, 80, 56, 0.8);
+}
+.poison {
+  background-color: rgba(176, 88, 160, 0.8);
+}
+.ground {
+  background-color: rgba(234, 214, 164, 0.8);
+}
+.flying {
+  background-color: rgba(152, 168, 240, 0.8);
+}
+.psychic {
+  background-color: rgba(248, 112, 160, 0.8);
+}
+.bug {
+  background-color: rgba(168, 184, 32, 0.8);
+}
+.rock {
+  background-color: rgba(184, 160, 88, 0.8);
+}
+.ghost {
+  background-color: rgba(96, 96, 176, 0.8);
+}
+.dark {
+  background-color: rgba(122, 88, 72, 0.8);
+}
+.dragon {
+  background-color: rgba(120, 96, 224, 0.8);
+}
+.fairy {
+  background-color: rgba(231, 159, 231, 0.8);
+}
+
+.black {
+  background-color: black;
+}
+
+
+.strength {
+  height: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 10%;
+  position: relative;
+}
+.weak {
+  background-color: red;
+}
+
+.normal {
+  background-color: rgb(220, 220, 8);
+}
+.strong {
+  background-color: rgb(142, 223, 21);
+}
+
+.superb {
+  background-color: rgb(0, 255, 0);
+}
+
+.footer {
+  margin: 2% 0%;
+  text-align: center;
+}
+
+.p1 {
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  display: flex; */
+  margin-left: 2%;
+}
+
+.spacer {
+  margin-right: 20px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+.pokemonCard:hover {
+  transform: scale(1.2);
+  color: greenyellow;
 }
