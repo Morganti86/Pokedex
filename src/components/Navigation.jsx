@@ -17,7 +17,7 @@ export function Navigation() {
           {links.map(({ label, route }) => (
             <li key={route}>
               <Link href={route}>
-                <img src="/title.png" width="350" height="100" />
+                <img src="/title.png" width="350" height="100" alt="title" />
               </Link>
             </li>
           ))}

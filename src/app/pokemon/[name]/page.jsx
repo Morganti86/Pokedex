@@ -12,11 +12,19 @@ export default async function Pokemon({ params }) {
   const ids = pokemonSingle.id;
   const type = pokemonSingle.types.map((type) => {
     return (
-      <span className={"style" + " " + type.type.name}> {type.type.name} </span>
+      <span key={type.type.name} className={"style" + " " + type.type.name}>
+        {" "}
+        {type.type.name}{" "}
+      </span>
     );
   });
   const abilities = pokemonSingle.abilities.map((ability) => {
-    return <span className="style black"> {ability.ability.name} </span>;
+    return (
+      <span key={ability.ability.name} className="style black">
+        {" "}
+        {ability.ability.name}{" "}
+      </span>
+    );
   });
   const height = pokemonSingle.height;
   const weight = pokemonSingle.weight;
