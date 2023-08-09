@@ -2,7 +2,7 @@
   "name": "pokedex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Morganti86/pokedex",
+  "homepage": "https://github.com/pokedex",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
