@@ -4,17 +4,22 @@
     padding: 5px;
 }
 .navigation {
-    font-size: 250%;
-    font-weight: 900;
-    text-align: center;
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
-    gap: 32px;
-    align-items: center;
     justify-content: center;
 }
 
 .navigation img:hover {
-    width: 400px;
+    width: 600px;
+}
+
+@media (max-width: 680px) {
+  .navigation img {
+    width: 300px;
+  }
+
+  .navigation img:hover {
+    width: 350px;
+}
+
 }

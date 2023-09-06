@@ -62,58 +62,58 @@ export default async function Pokemon({ params }) {
             width="350"
             height="350"
             placeholder="blur"
-            blurDataURL={"../../public/pokeball.png"}
+            blurDataURL={"../pokeball.png"}
           />
         </div>
         <div className="p1">
           <div className="pokemonInfo">
-            <h4>
+            <h3>
               <span className="underline">Type:</span> {type}
-            </h4>
-            <h4>
+            </h3>
+            <h3>
               <span className="underline">Abilities:</span> {abilities}
-            </h4>
-            <h4>
+            </h3>
+            <h3>
               <span className="underline">Height:</span> {height} m
-            </h4>
-            <h4>
+            </h3>
+            <h3>
               <span className="underline">Weight:</span> {weight} kg
-            </h4>
-            <h4>
-              <span className="underline">Base Stats:</span>
+            </h3>
+            <h3>
+              <span className="underline">Base Stats:</span>{" "}
               {stats.hp +
                 stats.attack +
                 stats.defence +
                 stats.specialattack +
                 stats.specialdefense +
                 stats.speed}
-            </h4>
+            </h3>
           </div>
           <div className="table">
             <div className="tableDescription">
               <div className="tableStats">
-                <h6>HP:</h6>
-                <h6>{stats.hp}</h6>
+                <h5>HP:</h5>
+                <h5>{stats.hp}</h5>
               </div>
               <div className="tableStats">
-                <h6>ATTACK:</h6>
-                <h6>{stats.attack}</h6>
+                <h5>ATTACK:</h5>
+                <h5>{stats.attack}</h5>
               </div>
               <div className="tableStats">
-                <h6>DEFENCE:</h6>
-                <h6>{stats.defence}</h6>
+                <h5>DEFENCE:</h5>
+                <h5>{stats.defence}</h5>
               </div>
               <div className="tableStats">
-                <h6>SPECIAL ATTACK:</h6>
-                <h6>{stats.specialattack}</h6>
+                <h5>SPECIAL ATTACK:</h5>
+                <h5>{stats.specialattack}</h5>
               </div>
               <div className="tableStats">
-                <h6>SPECIAL DEFENCE:</h6>
-                <h6>{stats.specialdefense}</h6>
+                <h5>SPECIAL DEFENCE:</h5>
+                <h5>{stats.specialdefense}</h5>
               </div>
               <div className="tableStats">
-                <h6>SPEED:</h6>
-                <h6>{stats.speed}</h6>
+                <h5>SPEED:</h5>
+                <h5>{stats.speed}</h5>
               </div>
             </div>
             <div className="tableSideBar">

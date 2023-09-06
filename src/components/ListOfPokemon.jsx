@@ -11,14 +11,13 @@ export async function ListOfPokemon() {
   const allPokemon = await fetchAllPokemon(0);
 
   return (
-    <div className="container">
+    <section className="container">
       <div className="pokemonList">
         {allPokemon.results.map((pokemon, index) => (
           <div className="card" key={index + 1}>
             <div className="pokemonCard">
               <Link href="/pokemon/[name]" as={`/pokemon/${pokemon.name}`}>
                 <h3 className="pokemonName">{pokemon.name}</h3>
-
                 <Image
                   className="pokemonImage"
                   src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${
@@ -33,6 +32,6 @@ export async function ListOfPokemon() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
