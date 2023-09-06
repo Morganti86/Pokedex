@@ -161,13 +161,13 @@ a {
 }
 
 .tableDescription {
-  width: 13vw;
+  width: 11vw;
 }
 
 .tableStats {
   justify-content: space-between;
   display: flex;
-  width: 13vw;
+  width: 11vw;
 }
 
 .tableSideBar {
@@ -307,11 +307,11 @@ a {
   }
 
   .tableDescription {
-    width: 16.5vw;
+    width: 18vw;
   }
 
   .tableStats {
-    width: 16.5vw;
+    width: 18vw;
   }
 }
 
@@ -330,10 +330,10 @@ a {
   }
 
   .tableDescription {
-    width: 35vw;
+    width: 36vw;
   }
 
   .tableStats {
-    width: 35vw;
+    width: 36vw;
   }
 }
