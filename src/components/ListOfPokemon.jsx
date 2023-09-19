@@ -17,7 +17,6 @@ export async function ListOfPokemon() {
           <div className="card" key={index + 1}>
             <div className="pokemonCard">
               <Link href="/pokemon/[name]" as={`/pokemon/${pokemon.name}`}>
-                <h3 className="pokemonName">{pokemon.name}</h3>
                 <Image
                   className="pokemonImage"
                   src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${
@@ -27,6 +26,7 @@ export async function ListOfPokemon() {
                   width="100"
                   height="100"
                 />
+                <h3 className="pokemonName">{pokemon.name}</h3>
               </Link>
             </div>
           </div>
