@@ -1,8 +1,7 @@
 .header {
-    /* border: 1px solid black; */
-    /* border-radius: 4px; */
-    padding: 5px;
+    margin: 2% 0 4%;
 }
+
 .navigation {
     display: flex;
     list-style: none;
@@ -10,16 +9,17 @@
 }
 
 .navigation img:hover {
-    width: 500px;
+    width: 430px;
 }
 
 @media (max-width: 680px) {
   .navigation img {
-    width: 300px;
+    width: 250px;
+    height: auto;
   }
 
   .navigation img:hover {
-    width: 325px;
+    width: 260px;
 }
 
 }

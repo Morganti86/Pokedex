@@ -22,7 +22,7 @@ export async function ListOfPokemon() {
                   src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${
                     index + 1
                   }.svg`}
-                  alt={pokemon.name}
+                  alt={`${pokemon.name} image`} 
                   width="100"
                   height="100"
                 />

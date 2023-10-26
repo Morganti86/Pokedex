@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./Navigation.module.css";
-import { Image } from "../../next.config";
 
 const links = [
   {
@@ -14,10 +13,10 @@ export function Navigation() {
     <header className={styles.header}>
       <nav>
         <ul className={styles.navigation}>
-          {links.map(({ label, route }) => (
+          {links.map(({ route }) => (
             <li key={route}>
               <Link href={route}>
-                <img src="/p.png" width="450" height="200" alt="title" />
+                <img src="/title.webp" width="400" height="155" alt="title" />
               </Link>
             </li>
           ))}

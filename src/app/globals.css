@@ -85,17 +85,14 @@ body {
   overflow-x: hidden;
   font-family: monospace;
   font-size: 1.2vw;
-  backdrop-filter: brightness(0.8);
 }
 
 body {
   color: ivory;
-  /* -webkit-text-stroke: 0.2px ivory; */
-  /* background-color: rgb(50, 50, 50); */
-  /* background-image: linear-gradient(to right, rgb(73, 123, 167), rgb(255, 255, 255)); */
-  background-image: url("../../public/pokemonBackground.jpg");
-  background-repeat: repeat;
+  background-image: url("../../public/pokemonBackground.webp");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 
 a {
@@ -104,12 +101,12 @@ a {
 }
 
 .container {
+  margin: 0 5%;
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1%;
 }
 
 .pokemonList {
@@ -117,15 +114,11 @@ a {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  /* margin: 5% 0; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .pokemonCard {
-  /* border-style: solid;
-  border-width: 1px;
-  border-color: black; */
-  background-image: url("../../public/pokeball.png");
+  background-image: url("../../public/pokeball.webp");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -139,7 +132,7 @@ a {
 .pokemonName {
   text-align: center;
   text-transform: uppercase;
-  min-width: 5rem;
+  min-width: 6rem;
 }
 
 .pokemonInfo {
@@ -271,7 +264,6 @@ a {
 .footer {
   margin: 2% 0%;
   text-align: center;
-  -webkit-text-stroke: 0;
 }
 
 .p1 {
@@ -318,7 +310,7 @@ a {
 
 @media (max-width: 680px) {
   body {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .pokemonInfo {
