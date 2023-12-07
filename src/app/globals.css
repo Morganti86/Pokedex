@@ -122,6 +122,14 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  opacity: 0;
+  transform: none;
+  transition: opacity 1s, transform 2s;
+}
+
+.pokemonCard.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .pokemonImage {
@@ -273,6 +281,7 @@ a {
 .spacer {
   margin-right: 20px;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {
