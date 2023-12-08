@@ -253,7 +253,15 @@ a {
   margin-bottom: 10px;
   padding-left: 10%;
   position: relative;
+  animation: progress_bar 3s;
 }
+
+@keyframes progress_bar {
+  0% {
+    width: 0;
+  }
+}
+
 .weak {
   background-color: red;
 }
@@ -269,8 +277,9 @@ a {
   background-color: rgb(0, 255, 0);
 }
 
+
 .footer {
-  margin: 2% 0%;
+  margin: 3% 0% 2%;
   text-align: center;
 }
 
