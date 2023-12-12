@@ -11,9 +11,9 @@ export function PokemonCard({ pokemon, index }) {
     const handleScroll = () => {
       if (cardRef.current) {
         const rect = cardRef.current?.getBoundingClientRect();
-        console.log("bot: " + rect.bottom);
-        console.log("win: " + window.innerHeight);
-        const visible = rect?.bottom >= 20 && rect?.top <= window.innerHeight / 1.2;
+        const visible =
+          rect?.bottom >= window.innerHeight / 20 &&
+          rect?.top <= window.innerHeight / 1.2;
         setIsVisible(visible);
       }
     };
