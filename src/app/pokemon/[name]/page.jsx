@@ -92,28 +92,28 @@ export default async function Pokemon({ params }) {
           <div className="table">
             <div className="tableDescription">
               <div className="tableStats">
-                <h5>HP:</h5>
-                <h5>{stats.hp}</h5>
+                <h4>HP:</h4>
+                <h4>{stats.hp}</h4>
               </div>
               <div className="tableStats">
-                <h5>ATTACK:</h5>
-                <h5>{stats.attack}</h5>
+                <h4>ATTACK:</h4>
+                <h4>{stats.attack}</h4>
               </div>
               <div className="tableStats">
-                <h5>DEFENCE:</h5>
-                <h5>{stats.defence}</h5>
+                <h4>DEFENCE:</h4>
+                <h4>{stats.defence}</h4>
               </div>
               <div className="tableStats">
-                <h5>SPECIAL ATTACK:</h5>
-                <h5>{stats.specialattack}</h5>
+                <h4>SPECIAL ATTACK:</h4>
+                <h4>{stats.specialattack}</h4>
               </div>
               <div className="tableStats">
-                <h5>SPECIAL DEFENCE:</h5>
-                <h5>{stats.specialdefense}</h5>
+                <h4>SPECIAL DEFENCE:</h4>
+                <h4>{stats.specialdefense}</h4>
               </div>
               <div className="tableStats">
-                <h5>SPEED:</h5>
-                <h5>{stats.speed}</h5>
+                <h4>SPEED:</h4>
+                <h4>{stats.speed}</h4>
               </div>
             </div>
             <div className="tableSideBar">

@@ -50,6 +50,8 @@ export function PokemonCard({ pokemon, index }) {
           alt={`${pokemon.name} image`}
           width="100"
           height="100"
+          placeholder="blur"
+          blurDataURL={"/pokeball.webp"}
         />
         <h3 className="pokemonName">{pokemon.name}</h3>
       </Link>

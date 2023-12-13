@@ -118,10 +118,6 @@ a {
 }
 
 .pokemonCard {
-  background-image: url("../../public/pokeball.webp");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
   opacity: 0;
   transform: none;
   transition: opacity 1s, transform 2s;
@@ -170,6 +166,7 @@ a {
   justify-content: space-between;
   display: flex;
   width: 11vw;
+  font-size: 13px;
 }
 
 .tableSideBar {
@@ -277,7 +274,6 @@ a {
   background-color: rgb(0, 255, 0);
 }
 
-
 .footer {
   margin: 3% 0% 2%;
   text-align: center;
@@ -291,7 +287,6 @@ a {
   margin-right: 20px;
 }
 
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -299,6 +294,10 @@ a {
 }
 
 .pokemonCard:hover {
+  background-image: url("../../public/pokeball2.webp");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   transform: scale(1.2);
   color: greenyellow;
 }
@@ -313,6 +312,10 @@ a {
     min-width: 38vw;
   }
 
+  .underline {
+    font-size: 2vw;
+  }
+
   .style {
     font-size: 2vw;
   }
@@ -323,6 +326,7 @@ a {
 
   .tableStats {
     width: 18vw;
+    font-size: 12px;
   }
 }
 
@@ -336,6 +340,10 @@ a {
     min-width: 95vw;
   }
 
+  .underline {
+    font-size: 4vw;
+  }
+
   .style {
     font-size: 4vw;
   }
@@ -346,5 +354,6 @@ a {
 
   .tableStats {
     width: 38vw;
+    font-size: 12px;
   }
 }
