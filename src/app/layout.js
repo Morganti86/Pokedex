@@ -6,8 +6,8 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Pokedex App",
-  description: "Pokemon information App",
+  title: "Pokémon Information App",
+  description: "Pokémon Universe Unveiled: Explore, Learn, and Catch 'Em All!",
 };
 
 export default function RootLayout({ children }) {

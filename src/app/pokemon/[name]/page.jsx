@@ -62,7 +62,7 @@ export default async function Pokemon({ params }) {
             width="350"
             height="350"
             placeholder="blur"
-            blurDataURL={"../pokeball.png"}
+            blurDataURL={"../pokeball2.png"}
           />
         </div>
         <div className="p1">

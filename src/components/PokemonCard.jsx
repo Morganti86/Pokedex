@@ -12,8 +12,9 @@ export function PokemonCard({ pokemon, index }) {
       if (cardRef.current) {
         const rect = cardRef.current?.getBoundingClientRect();
         const visible =
-          rect?.bottom >= window.innerHeight / 20 &&
-          rect?.top <= window.innerHeight / 1.2;
+          // rect?.bottom >= window.innerHeight / 20
+          // && rect?.top <= window.innerHeight / 1.2;
+          rect.top <= window.innerHeight / 1.1;
         setIsVisible(visible);
       }
     };
