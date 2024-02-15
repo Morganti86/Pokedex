@@ -109,6 +109,19 @@ a {
   justify-content: center;
 }
 
+.singlePokemonContainer {
+  margin: 0 5%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.ImageContainer {
+}
+
 .pokemonList {
   display: flex;
   flex-wrap: wrap;
@@ -279,7 +292,8 @@ a {
   text-align: center;
 }
 
-.p1 {
+.pokemonInfoContainer {
+  width: 40%;
   margin-left: 2%;
 }
 
@@ -321,11 +335,11 @@ a {
   }
 
   .tableDescription {
-    width: 18vw;
+    width: 17vw;
   }
 
   .tableStats {
-    width: 18vw;
+    width: 17vw;
     font-size: 12px;
   }
 }
@@ -333,6 +347,10 @@ a {
 @media (max-width: 680px) {
   body {
     font-size: 3vw;
+  }
+
+  .pokemonInfoContainer {
+    width: 100%;
   }
 
   .pokemonInfo {

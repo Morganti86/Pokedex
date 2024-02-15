@@ -53,8 +53,8 @@ export default async function Pokemon({ params }) {
   return (
     <div className="card" key={ids}>
       <h1 className="pokemonName">{name}</h1>
-      <div className="container">
-        <div className="p1">
+      <div className="singlePokemonContainer">
+        <div className="ImageContainer">
           <Image
             className="pokemonImage"
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${ids}.svg`}
@@ -65,7 +65,7 @@ export default async function Pokemon({ params }) {
             blurDataURL={"../pokeball2.png"}
           />
         </div>
-        <div className="p1">
+        <div className="pokemonInfoContainer">
           <div className="pokemonInfo">
             <h3>
               <span className="underline">Type:</span> {type}
